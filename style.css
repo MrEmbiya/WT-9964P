@@ -1,0 +1,240 @@
+.circle {
+  content: "";
+  width: 375px;
+  height: 375px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  background: #001eff;
+  background: linear-gradient(
+    149deg,
+    rgba(0, 30, 255, 1) 0%,
+    rgba(158, 143, 255, 1) 83%
+  );
+}
+.img-tel-1 {
+  max-width: 60%;
+}
+.circle::before {
+  content: "+";
+  position: absolute;
+  color: #847de8;
+  font-size: 30px;
+  font-weight: bold;
+  left: 0;
+  bottom: 0;
+  transform: rotate(45deg);
+}
+.circle::after {
+  content: ".";
+  position: absolute;
+  color: #847de8;
+  font-size: 70px;
+  top: 0;
+  right: 0;
+}
+.bg-testimonial {
+  background: #001eff;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 30, 255, 1) 0%,
+    rgba(158, 143, 255, 1) 100%
+  );
+}
+.circle-2 {
+  content: "";
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  background: #001eff;
+  background: linear-gradient(
+    160deg,
+    rgba(0, 30, 255, 1) 0%,
+    rgba(158, 143, 255, 1) 50%
+  );
+}
+.tel-2 {
+  max-width: 100%;
+  margin-left: 80px;
+}
+.circle-2::before {
+  content: ".";
+  position: absolute;
+  color: #847de8;
+  font-size: 70px;
+  left: 0;
+  bottom: 0;
+}
+.circle-2::after {
+  content: "+";
+  position: absolute;
+  color: #847de8;
+  font-size: 30px;
+  right: 0;
+  top: 0;
+  transform: rotate(45deg);
+  margin-right: -50px;
+  font-weight: bold;
+}
+.text-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 30, 255, 1) 0%,
+    rgba(158, 143, 255, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.download-container {
+  position: relative;
+  width: 100%;
+  height: 750px;
+}
+.download-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: url(./assets/img/genshin4.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.604);
+}
+.content{
+    position: absolute;
+    padding-left: 150px;
+    padding-top: 200px;
+}
+/* HERO SECTION */
+@media (max-width: 991px) {
+  .bg-herosection .row {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .bg-herosection .col-auto {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bg-herosection .col-auto a img {
+    max-width: 180px;
+  }
+  .circle{
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+  }
+@media (max-width: 767px){
+  
+    .circle {
+    background: none !important;
+    margin: 2rem auto 0;
+    margin-top: 50px;
+  }
+
+  .circle::before,
+  .circle::after {
+    display: none;
+  }
+
+  .img-tel-1 {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+}
+
+}
+
+/* FEATURES */
+@media (max-width: 991px) {
+
+  .tel-2 {
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .features-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .features-content > div {
+    padding: 0 1rem;
+  }
+  .circle-2{
+    margin-top: 75px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features-content {
+    display: block;
+  }
+
+  .features-content > div {
+    margin-bottom: 2rem;
+  }
+    .circle-2 {
+    background: none !important;
+    margin: 2rem auto;
+    margin-top: 50px;
+  }
+
+  .circle-2::before,
+  .circle-2::after {
+    display: none;
+  }
+}
+
+/* NEW AGE */
+@media (max-width: 991px) {
+  .new-age .row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .new-age img {
+    max-width: 70%;
+    margin: 2rem auto 0;
+  }
+}
+
+/* GET APP */
+@media (max-width: 991px) {
+  .bg-testimonial .row.justify-content-center {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .bg-testimonial .col-auto {
+    margin-bottom: 1rem;
+  }
+
+  .bg-testimonial .col-auto img {
+    max-width: 200px;
+  }
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+}
